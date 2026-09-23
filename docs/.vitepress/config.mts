@@ -37,14 +37,12 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '部署指南', link: '/guide/quick-start' },
-      { text: '使用手册', link: '/manual/sources' },
-      { text: '客户端配置', link: '/clients/singbox' },
-      { text: '进阶特性', link: '/advanced/decoupling' },
       {
-        text: '相关链接',
+        text: '使用手册',
         items: [
-          { text: 'Subone 仓库', link: 'https://github.com/cfm019/subone' },
-          { text: '更新日志', link: 'https://github.com/cfm019/subone/releases' }
+          { text: '使用手册', link: '/manual/sources' },
+          { text: '客户端配置', link: '/clients/singbox' },
+          { text: '进阶特性', link: '/advanced/decoupling' }
         ]
       }
     ],

@@ -254,3 +254,75 @@
   --vp-button-brand-active-bg: var(--vp-c-brand-3);
 }
 
+/* ============================================================
+   首页 Feature 特性卡片排版优化：图标与标题左右并排
+   ============================================================ */
+
+.VPFeatures .VPFeature .box {
+  display: grid !important;
+  grid-template-columns: auto 1fr !important;
+  column-gap: 12px !important;
+  align-items: center !important;
+  padding: 20px !important;
+}
+
+.VPFeatures .VPFeature .box > .VPImage,
+.VPFeatures .VPFeature .icon {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  margin-bottom: 0 !important;
+  width: 40px !important;
+  height: 40px !important;
+  font-size: 20px !important;
+  border-radius: 8px !important;
+  flex-shrink: 0 !important;
+}
+
+.VPFeatures .VPFeature .title {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  margin: 0 !important;
+}
+
+.VPFeatures .VPFeature .details {
+  grid-column: 1 / -1 !important;
+  grid-row: 2 !important;
+  padding-top: 10px !important;
+  margin: 0 !important;
+  font-size: 13.5px !important;
+  line-height: 1.55 !important;
+  color: var(--vp-c-text-2) !important;
+}
+
+.VPFeatures .VPFeature .link-text {
+  grid-column: 1 / -1 !important;
+  grid-row: 3 !important;
+}
+
+/* ============================================================
+   顶部导航栏响应式断点优化：防止 GitHub 图标与主题切换过早收进 ···
+   VitePress 默认要求 1280px 以上才显示独立图标；现菜单精简后空间充裕，
+   将其放宽到 768px（桌面/平板模式）即可常驻展示。
+   ============================================================ */
+
+@media (min-width: 768px) {
+  .VPNavBarAppearance {
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .VPNavBarSocialLinks {
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .VPNavBarExtra {
+    display: none !important;
+  }
+}
+
+
+

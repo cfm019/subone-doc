@@ -27,14 +27,14 @@ features:
     title: 多订阅与多自建聚合
     details: 汇聚多个上游机场订阅与自建独立节点，支持单条/批量 URI、Clash YAML、Sing-box JSON 格式解析。
   - icon: 🌐
-    title: 多协议链接配置解析
+    title: 多协议配置解析
     details: 支持 VLESS、VMess、Shadowsocks、Trojan、Hysteria 2、TUIC v5、AnyTLS、WireGuard、Snell 等协议解析。
   - icon: 🎯
-    title: 策略组与规则集编制
-    details: 可视化的策略组编辑。
+    title: 可视化策略组
+    details: 可视化的策略组编辑，支持订阅源与自建节点组合编排，支持成组套用和展开挂载。
   - icon: 📱
-    title: 客户端 UA 识别
-    details: 支持 Sing-box、Mihomo (Clash)、Loon、Quantumult X、Egern 与 Shadowrocket，自识别 UA 分发。
+    title: 规则集编制
+    details: 支持远程规则集和本地自定义规则集，一套规则多机复用。
   - icon: ⚡
     title: 特色规则组
     details: 外部订阅保持原链接，自建节点组、规则组转为独立端点。节点变动仅刷新对应订阅源。
