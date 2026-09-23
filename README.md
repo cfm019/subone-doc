@@ -1,9 +1,9 @@
-# SubOne Documentation (subone-doc)
+# Subone Documentation (subone-doc)
 
-SubOne 官方使用文档站点，基于 [VitePress](https://vitepress.dev/) 构建。
+Subone 使用文档站点，基于 [VitePress](https://vitepress.dev/) 构建。
 
-- **在线文档**：`https://cfm019.github.io/subone-doc/`
-- **SubOne 代码仓库**：[cfm019/subone](https://github.com/cfm019/subone)
+- **在线文档**：[https://cfm019.github.io/subone-doc/](https://cfm019.github.io/subone-doc/)
+- **Subone 代码仓库**：[cfm019/subone](https://github.com/cfm019/subone)
 
 ---
 

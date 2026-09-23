@@ -4,8 +4,8 @@ import { defineConfig } from 'vitepress'
 const base = process.env.DOCS_BASE || (process.env.GITHUB_ACTIONS ? '/subone-doc/' : '/')
 
 export default defineConfig({
-  title: 'SubOne',
-  description: '多节点多源聚合与配置生成系统使用文档',
+  title: 'Subone',
+  description: '多源多节点聚合配置生成系统使用文档',
   base,
   lang: 'zh-CN',
 
@@ -31,7 +31,7 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/logo.svg',
-    siteTitle: 'SubOne',
+    siteTitle: 'Subone',
 
     // 顶部导航栏
     nav: [
@@ -43,7 +43,7 @@ export default defineConfig({
       {
         text: '相关链接',
         items: [
-          { text: 'SubOne 仓库', link: 'https://github.com/cfm019/subone' },
+          { text: 'Subone 仓库', link: 'https://github.com/cfm019/subone' },
           { text: '更新日志', link: 'https://github.com/cfm019/subone/releases' }
         ]
       }

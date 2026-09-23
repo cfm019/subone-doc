@@ -1,4 +1,4 @@
-name: Deploy SubOne Docs to GitHub Pages
+name: Deploy Subone Docs to GitHub Pages
 
 on:
   push:

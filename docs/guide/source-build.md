@@ -1,6 +1,6 @@
 # 源码编译运行
 
-如果您希望自行从源码拉取并编译构建 SubOne，请参考以下指南。
+如果您希望自行从源码拉取并编译构建 Subone，请参考以下指南。
 
 ## 1. 环境准备
 
@@ -60,7 +60,7 @@ cp config.example.json config.json
 
 ```ini
 [Unit]
-Description=SubOne Subscription Service
+Description=Subone Subscription Service
 After=network.target
 
 [Service]

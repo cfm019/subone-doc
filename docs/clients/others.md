@@ -1,6 +1,6 @@
 # Loon / Quantumult X / Egern / Shadowrocket
 
-SubOne 全面支持 Apple 生态下的各类主流网络工具。
+Subone 全面支持 Apple 生态下的各类主流网络工具。
 
 ## Loon
 

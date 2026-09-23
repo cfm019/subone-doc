@@ -1,8 +1,8 @@
 # 控制台概览与多 Profile 管理
 
-SubOne 提供了简洁直观的 Web 可视化管理面板，支持从订阅源导入、策略组编排到客户端一键分发的一体化管理。
+Subone 提供了简洁直观的 Web 可视化管理面板，支持从订阅源导入、策略组编排到客户端一键分发的一体化管理。
 
-![SubOne 控制台首页概览](/images/sub1-home.png)
+![Subone 控制台首页概览](/images/sub1-home.png)
 
 ---
 
@@ -13,7 +13,7 @@ SubOne 提供了简洁直观的 Web 可视化管理面板，支持从订阅源�
 - **Mac / Windows 电脑**：倾向于 Clash / Mihomo，需要完整的开发分流规则；
 - **家庭软路由 / 旁路由**：基于 Sing-box 透明网关，接管全屋流量与本地 DNS。
 
-SubOne 针对此场景设计了 **多 Profile 架构**：
+Subone 针对此场景设计了 **多 Profile 架构**：
 
 1. **完全独立的 Token**：每个 Profile 拥有独立的访问 Token 和订阅 URL，互不干扰；
 2. **差异化节点筛选**：每个 Profile 可以按需勾选不同的外部订阅源与自建节点组；

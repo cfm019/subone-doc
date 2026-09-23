@@ -1,6 +1,6 @@
 # 模版系统与自定义定制
 
-为了兼容不同客户端的特有字段（例如 Sing-box 的 `dns` / `inbounds` / `experimental`，Mihomo 的 `sniffer` / `tun` 等），SubOne 采用了模版注入机制。
+为了兼容不同客户端的特有字段（例如 Sing-box 的 `dns` / `inbounds` / `experimental`，Mihomo 的 `sniffer` / `tun` 等），Subone 采用了模版注入机制。
 
 ![客户端模版管理界面](/images/sub1-template.png)
 

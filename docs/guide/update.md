@@ -1,10 +1,10 @@
 # 版本更新与维护
 
-当 SubOne 发布了新特性或修复漏洞时，您可以通过以下方式便捷地升级到最新版本。
+当 Subone 发布了新特性或修复漏洞时，您可以通过以下方式便捷地升级到最新版本。
 
 ## 一键脚本更新 (推荐)
 
-如果您是通过一键安装脚本部署的 SubOne，只需在终端运行：
+如果您是通过一键安装脚本部署的 Subone，只需在终端运行：
 
 ```bash
 bash /opt/subone/install.sh update
@@ -47,7 +47,7 @@ systemctl restart subone
 
 ## 数据备份建议
 
-SubOne 的所有数据存放在根目录的 `data/` 目录中：
+Subone 的所有数据存放在根目录的 `data/` 目录中：
 
 ```text
 /opt/subone/

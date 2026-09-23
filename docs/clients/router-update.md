@@ -1,6 +1,6 @@
 # 路由器 / OpenWrt 自动更新脚本
 
-对于部署在 OpenWrt 或 Linux 软路由 / 旁路由上的 Sing-box 透明网关，SubOne 官方仓库在 `tools/update-singbox.sh` 提供了专用的定时拉取更新脚本，配套 `templates/singbox-gateway.json` 模版使用。
+对于部署在 OpenWrt 或 Linux 软路由 / 旁路由上的 Sing-box 透明网关，Subone 官方仓库在 `tools/update-singbox.sh` 提供了专用的定时拉取更新脚本，配套 `templates/singbox-gateway.json` 模版使用。
 
 ## 1. 下载脚本到路由器
 
@@ -37,7 +37,7 @@ SUB_URL="https://sub.yourdomain.com/s/YOUR_TOKEN/singbox" /root/update-singbox.s
 
 | 环境变量 | 默认值 | 说明 |
 | :--- | :--- | :--- |
-| `SUB_URL` | *(必填)* | SubOne 的 Sing-box 订阅链接 |
+| `SUB_URL` | *(必填)* | Subone 的 Sing-box 订阅链接 |
 | `TARGET_CONF` | `/etc/sing-box/config.json` | 路由器上 sing-box 的配置文件目标路径 |
 | `SINGBOX_BIN` | `/usr/bin/sing-box` | sing-box 核心二进制程序路径 |
 | `RELOAD_CMD` | `/etc/init.d/sing-box restart` | 重载/重启 sing-box 服务的命令 (systemd 环境可设为 `systemctl restart sing-box`) |

@@ -1,6 +1,6 @@
 # Caddy 反向代理与 HTTPS
 
-在生产或公网环境中部署 SubOne 时，强烈建议配置域名与反向代理，配合自动申请的 TLS/SSL 证书，以保障订阅链接分发时的传输安全。
+在生产或公网环境中部署 Subone 时，强烈建议配置域名与反向代理，配合自动申请的 TLS/SSL 证书，以保障订阅链接分发时的传输安全。
 
 ---
 
@@ -42,4 +42,4 @@ sub.yourdomain.com {
 caddy reload
 ```
 
-稍等片刻，Caddy 会自动为您的域名申请 HTTPS 证书。随后您便可以直接通过 `https://sub.yourdomain.com` 安全访问 SubOne 控制台与订阅接口。
+稍等片刻，Caddy 会自动为您的域名申请 HTTPS 证书。随后您便可以直接通过 `https://sub.yourdomain.com` 安全访问 Subone 控制台与订阅接口。
