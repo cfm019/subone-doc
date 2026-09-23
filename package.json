@@ -1,0 +1,18 @@
+{
+  "name": "subone-doc",
+  "version": "1.0.0",
+  "description": "多节点多源聚合与配置生成。支持汇聚多个上游机场订阅与自建独立节点，分 Profile 定制策略组、分流规则及模版，生成组合后的聚合订阅配置。",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

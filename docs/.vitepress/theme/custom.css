@@ -1,0 +1,241 @@
+/* ============================================================
+   首页 Hero 视觉比例与留白优化
+   ============================================================ */
+
+/* 全局收紧 Hero 顶部与底部留白，消除默认多达 80px 的多余空白 */
+.VPHero {
+  padding-top: calc(var(--vp-nav-height) + 20px) !important;
+  padding-bottom: 28px !important;
+}
+
+@media (min-width: 640px) {
+  .VPHero {
+    padding-top: calc(var(--vp-nav-height) + 24px) !important;
+    padding-bottom: 36px !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPHero {
+    padding-top: calc(var(--vp-nav-height) + 24px) !important;
+    padding-bottom: 44px !important;
+  }
+}
+
+/* 移动端 / 窄屏（< 960px）：小图标与标题左右平放并排，告别上下堆叠与巨大图标 */
+@media (max-width: 959px) {
+
+  .VPHero.has-image .container {
+    display: grid !important;
+    grid-template-columns: auto 1fr !important;
+    align-items: center !important;
+    text-align: left !important;
+    row-gap: 12px !important;
+    column-gap: 14px !important;
+    max-width: 100% !important;
+  }
+
+  .VPHero .main {
+    display: contents !important;
+  }
+
+  /* 左侧：小巧图标与标题平放 */
+  .VPHero.has-image .image {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    order: unset !important;
+    margin: 0 !important;
+    align-self: center !important;
+    flex-grow: 0 !important;
+  }
+
+  .VPHero.has-image .image-container {
+    width: 64px !important;
+    height: 64px !important;
+    margin: 0 !important;
+    transform: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .VPHero.has-image .image-bg {
+    display: none !important;
+  }
+
+  .VPHero.has-image .image-src,
+  .VPHero.has-image .image-container img {
+    position: static !important;
+    transform: none !important;
+    width: 64px !important;
+    height: 64px !important;
+    max-width: 64px !important;
+    max-height: 64px !important;
+    border-radius: 14px !important;
+    object-fit: contain !important;
+  }
+
+  /* 右侧：品牌名与主标题，与图标水平并列 */
+  .VPHero .heading {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .VPHero.has-image .name,
+  .VPHero.has-image .text {
+    margin: 0 !important;
+    text-align: left !important;
+  }
+
+  .VPHero .name {
+    font-size: 26px !important;
+    line-height: 1.15 !important;
+  }
+
+  .VPHero .text {
+    font-size: 16px !important;
+    line-height: 1.35 !important;
+    font-weight: 600 !important;
+  }
+
+  /* 描述文案：通栏展示，自然折行 */
+  .VPHero .tagline {
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+    margin: 0 !important;
+    text-align: left !important;
+    max-width: 100% !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    padding-top: 0 !important;
+  }
+
+  /* 操作按钮组：通栏靠左 */
+  .VPHero.has-image .actions {
+    grid-column: 1 / -1 !important;
+    grid-row: 3 !important;
+    justify-content: flex-start !important;
+    padding-top: 4px !important;
+    margin: -4px !important;
+  }
+
+  .VPHero .action {
+    padding: 4px !important;
+  }
+}
+
+/* 平板过渡屏（640px ~ 959px）：适度调增图标与文字尺寸 */
+@media (min-width: 640px) and (max-width: 959px) {
+  .VPHero.has-image .container {
+    column-gap: 18px !important;
+    row-gap: 14px !important;
+  }
+
+  .VPHero.has-image .image-container {
+    width: 76px !important;
+    height: 76px !important;
+  }
+
+  .VPHero.has-image .image-src,
+  .VPHero.has-image .image-container img {
+    width: 76px !important;
+    height: 76px !important;
+    max-width: 76px !important;
+    max-height: 76px !important;
+  }
+
+  .VPHero .name {
+    font-size: 30px !important;
+  }
+
+  .VPHero .text {
+    font-size: 18px !important;
+  }
+
+  .VPHero .tagline {
+    font-size: 15px !important;
+  }
+}
+
+/* 桌面端大屏（>= 960px）：经典左右双栏，克制优雅不膨胀 */
+@media (min-width: 960px) {
+  .VPHero .name {
+    font-size: 40px !important;
+    line-height: 1.15 !important;
+  }
+
+  .VPHero .text {
+    font-size: 30px !important;
+    line-height: 1.3 !important;
+    max-width: 640px;
+  }
+
+  .VPHero .tagline {
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+    max-width: 560px;
+  }
+
+  .VPHero.has-image .main {
+    max-width: 620px;
+  }
+
+  .VPHero .image-container {
+    width: 240px !important;
+    height: 240px !important;
+    transform: translate(0, 0) !important;
+  }
+
+  .VPHero .image-bg {
+    width: 180px !important;
+    height: 180px !important;
+  }
+
+  .VPHero .image-src,
+  .VPHero .image-container img {
+    max-width: 210px !important;
+    max-height: 210px !important;
+  }
+}
+
+/* SubOne 官方品牌色统一定制 (暖陶土色调) */
+:root {
+  --vp-c-brand-1: #CC785C;
+  --vp-c-brand-2: #BD6B50;
+  --vp-c-brand-3: #A65B43;
+  --vp-c-brand-soft: rgba(204, 120, 92, 0.14);
+
+  /* 主行动按钮样式优化：避免底色过深发黑，保持明朗温润 */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: var(--vp-c-brand-1);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #ffffff;
+  --vp-button-brand-active-bg: var(--vp-c-brand-3);
+}
+
+.dark {
+  --vp-c-brand-1: #D9896F;
+  --vp-c-brand-2: #CC785C;
+  --vp-c-brand-3: #BD6B50;
+  --vp-c-brand-soft: rgba(217, 137, 111, 0.16);
+
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: var(--vp-c-brand-1);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #ffffff;
+  --vp-button-brand-active-bg: var(--vp-c-brand-3);
+}
+
